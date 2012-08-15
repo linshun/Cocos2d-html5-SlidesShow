@@ -24,5 +24,5 @@ ppt7.scene = function () {
     var layer = new ppt7();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionProgressHorizontal.create(1, ret);
 };

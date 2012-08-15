@@ -84,5 +84,5 @@ ppt9.scene = function () {
     var layer = new ppt9();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionFade.create(1, ret);
 };

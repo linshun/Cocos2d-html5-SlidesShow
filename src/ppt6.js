@@ -75,5 +75,5 @@ ppt6.scene = function () {
     var layer = new ppt6();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionProgressOutIn.create(1, ret);
 };

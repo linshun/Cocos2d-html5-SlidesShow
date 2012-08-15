@@ -79,5 +79,5 @@ ppt5.scene = function () {
     var layer = new ppt5();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionShrinkGrow.create(1, ret);
 };

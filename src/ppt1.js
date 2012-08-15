@@ -35,5 +35,5 @@ ppt1.scene = function () {
     var layer = new ppt1();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionRotoZoom.create(1.0,ret);
 };

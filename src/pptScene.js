@@ -9,61 +9,61 @@ var pptList = [
     {
         title:"What is Cocos2d-html5?",
         pptScene:function () {
-            return new ppt1.scene();
+            return ppt1.scene();
         }
     },
     {
         title:"We are a Big Family",
         pptScene:function () {
-            return new ppt2.scene();
+            return ppt2.scene();
         }
     },
     {
         title:"No Profit?",
         pptScene:function () {
-            return new ppt3.scene();
+            return ppt3.scene();
         }
     },
     {
         title:"Develop with Game Framework",
         pptScene:function () {
-            return new ppt4.scene();
+            return ppt4.scene();
         }
     },
     {
         title:"Quick Development",
         pptScene:function () {
-            return new ppt5.scene();
+            return ppt5.scene();
         }
     },
     {
         title:"Of Course FishingJoy",
         pptScene:function () {
-            return new ppt6.scene();
+            return ppt6.scene();
         }
     },
     {
         title:"RoadMap",
         pptScene:function () {
-            return new ppt7.scene();
+            return ppt7.scene();
         }
     },
     {
         title:"WebGL",
         pptScene:function () {
-            return new ppt8.scene();
+            return ppt8.scene();
         }
     },
     {
         title:"About Us",
         pptScene:function () {
-            return new ppt9.scene();
+            return ppt9.scene();
         }
     },
     {
         title:"", // Q & A
         pptScene:function () {
-            return new ppt10.scene();
+            return ppt10.scene();
         }
     }
 

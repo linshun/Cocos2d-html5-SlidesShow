@@ -84,5 +84,5 @@ ppt2.scene = function () {
     var layer = new ppt2();
     layer.init();
     ret.addChild(layer);
-    return ret;
+    return cc.TransitionJumpZoom.create(1.0, ret);
 };

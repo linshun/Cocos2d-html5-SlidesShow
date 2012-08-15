@@ -21,8 +21,8 @@ var s_fishingjoylogo = "res/images/main_ui_title_cn.png";
 var s_fishingjoybackground = "res/images/ui_background_normal.jpg";
 var s_mainmenu = "res/images/mainmenu.plist";
 var s_character = "res/images/Character.plist";
-var s_Bird_vibrationSFX = "res/Sounds/Bird_vibration";
-var s_Bird_removeSFX = "res/Sounds/Bird_remove";
+var s_Bird_vibrationSFX = "res/sounds/Bird_vibration";
+var s_Bird_removeSFX = "res/sounds/Bird_remove";
 
 var g_res = [
     {type:"image", src:"res/images/bj03_01_sx.jpg"},

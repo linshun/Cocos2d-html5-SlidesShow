@@ -125,14 +125,14 @@ Birzzle.MainmenuLayer = cc.Layer.extend({
         this.addChild(main_cha_yellow, Birzzle.LayerType.front);
 
         //setup title
-        var main_title = cc.Sprite.create("res/images/title.png");
+        /*var main_title = cc.Sprite.create("res/images/title.png");
         main_title.setPosition(cc.p(384, 620));
         main_title.setAnchorPoint(cc.p(0.5, 0.5));
         this.addChild(main_title, Birzzle.LayerType.front);
         var main_titleMoveByDown = cc.MoveBy.create(2, cc.p(0, -20));
         var main_titleMoveByUp = main_titleMoveByDown.reverse();
         main_title.runAction(cc.RepeatForever.create(cc.Sequence.create(main_titleMoveByDown, main_titleMoveByUp)));
-
+*/
         /*var ttf = cc.LabelTTF.create("如何快速开发HTML5游戏？","微软雅黑 Bold",45);
          ttf.setPosition(cc.p(512,420));
          ttf.setColor(new cc.Color3B(117,25,0));

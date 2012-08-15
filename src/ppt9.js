@@ -15,7 +15,7 @@ var ppt9 = ppt.extend({
 
         this._office1 = cc.Sprite.create(s_office1);
         this._office1.setAnchorPoint(cc.p(0.5, 0.5));
-        this._office1.setScale(0.95);
+        this._office1.setScale(0.96);
         this._office1.setPosition(cc.p(size.width / 2, size.height / 2 - 20));
         this.addChild(this._office1, 1);
     },
@@ -37,7 +37,7 @@ var ppt9 = ppt.extend({
         } else if (this._currentBellet == 1) {
             this._currentBellet++;
 
-            this._office1.runAction(cc.ScaleTo.create(0.8, 0.5));
+            this._office1.runAction(cc.ScaleTo.create(0.8, 0.6));
             this._office1.runAction(cc.MoveTo.create(0.8, cc.p(250, 500)));
 
             this._office2.runAction(cc.ScaleTo.create(0.8, 0.5));

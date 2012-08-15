@@ -7,13 +7,13 @@ var pptList = [
         }
     },
     {
-        title:"What Is Cocos2d-html5?",
+        title:"What is Cocos2d-html5?",
         pptScene:function () {
             return new ppt1.scene();
         }
     },
     {
-        title:"We Are A Big Family",
+        title:"We are a Big Family",
         pptScene:function () {
             return new ppt2.scene();
         }
@@ -25,7 +25,7 @@ var pptList = [
         }
     },
     {
-        title:"Develop With Game Framework",
+        title:"Develop with Game Framework",
         pptScene:function () {
             return new ppt4.scene();
         }
@@ -61,7 +61,7 @@ var pptList = [
         }
     },
     {
-        title:"Q & A",
+        title:"", // Q & A
         pptScene:function () {
             return new ppt10.scene();
         }

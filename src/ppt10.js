@@ -12,7 +12,7 @@ var ppt10 = ppt.extend({
         this.addChild(backGround, 0);
 
         var logo = cc.Sprite.create(s_cocos2dx400);
-        logo.setPosition((cc.p(size.width/2, size.height / 2+100)));
+        logo.setPosition((cc.p(size.width/2, size.height / 2+80)));
         logo.setAnchorPoint(cc.p(0.5, 0.5));
         logo.setScale(0.8);
         //cc.DOM.convert(logo);
@@ -23,7 +23,7 @@ var ppt10 = ppt.extend({
         //label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
         this.addChild(label, 1);
-        label.setPosition(cc.p(size.width/2 , 180));
+        label.setPosition(cc.p(size.width/2 , 160));
     }
 });
 

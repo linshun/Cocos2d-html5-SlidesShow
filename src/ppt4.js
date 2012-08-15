@@ -1,9 +1,10 @@
 var ppt4 = ppt.extend({
+    _currentBellet:0,
 
     onEnter:function () {
 
         this._super();
-        cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, 0, true);
+
 
         cc.log("I am ppt4. Develop With Game Framework.");
         var size = cc.Director.getInstance().getWinSize();
@@ -18,7 +19,9 @@ var ppt4 = ppt.extend({
         this.addChild(birzzle, 1);
 
         // add some bird and effect on it.
-
+        var birdLayer = new Birzzle.MainmenuLayer();
+        birdLayer.init();
+        this.addChild(birdLayer, 2);
         // show the game video
 
         // How long to develop such a game?
@@ -26,13 +29,31 @@ var ppt4 = ppt.extend({
 
     },
 
-    onTouchBegan:function (touch, e) {
-        cc.log("touch began");
-        this.addBullet();
-    },
+
 
     addBullet:function(){
-        this.gotNextScene();
+        cc.log("ppt4 addBullet.")
+        if(this._currentBellet == 0){
+            this._currentBellet++;
+            var size = cc.Director.getInstance().getWinSize();
+            var label = cc.LabelTTF.create("开发时间:", "Arial", 58);
+            //var color = new cc.Color3B(255,0,0);
+            //label.setColor(color);
+            label.setAnchorPoint(cc.p(0,0.5));
+            this.addChild(label, 3);
+            label.setPosition(cc.p(size.width -300 , 520));
+
+            var subLabel = cc.LabelTTF.create(" < 40小时", "Arial", 58);
+            //var color = new cc.Color3B(255,0,0);
+            //subLabel.setColor(color);
+            subLabel.setAnchorPoint(cc.p(0,0.5));
+            this.addChild(subLabel, 3);
+            subLabel.setPosition(cc.p(size.width -300 , 440));
+
+        } else if(this._currentBellet == 1){
+            this.gotNextScene();
+        }
+
     }
 });
 

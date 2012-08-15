@@ -47,8 +47,11 @@
             'src/ppt7.js',
             'src/ppt8.js',
             'src/ppt9.js',
-            'src/ppt10.js'
-            //'src/ppt1.js'
+            'src/ppt10.js',
+            // effect files
+            'src/effect/LogoWaveLayer.js',
+            'src/effect/effectLayer.js',
+            'src/effect/GameController.js'
 
 
         ]

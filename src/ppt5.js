@@ -1,5 +1,6 @@
 var ppt5 = ppt.extend({
 
+    _currentBellet:0,
     onEnter:function () {
 
         this._super();
@@ -30,6 +31,39 @@ var ppt5 = ppt.extend({
         game23.setAnchorPoint(cc.p(0, 0.5));
         game23.setPosition(cc.p(150, size.height/2 -220));
         this.addChild(game23, 1);
+
+    },
+
+    addBullet:function(){
+        cc.log("ppt4 addBullet.")
+        if(this._currentBellet == 0){
+            this._currentBellet++;
+            var size = cc.Director.getInstance().getWinSize();
+            var label = cc.LabelTTF.create("射菊花", "Arial", 58);
+            var color = new cc.Color3B(255,0,0);
+            label.setColor(color);
+            label.setAnchorPoint(cc.p(0,0.5));
+            this.addChild(label, 3);
+            label.setPosition(cc.p(100 , size.height/2 + 180));
+
+            var subLabel = cc.LabelTTF.create("美工2天", "Arial", 58);
+            var color = new cc.Color3B(255,0,0);
+            subLabel.setColor(color);
+            subLabel.setAnchorPoint(cc.p(0,0.5));
+            this.addChild(subLabel, 3);
+            subLabel.setPosition(cc.p(150 , size.height / 2 -20 ));
+
+            var subLabel1 = cc.LabelTTF.create("程序2天", "Arial", 58);
+            var color = new cc.Color3B(255,0,0);
+            subLabel1.setColor(color);
+            subLabel1.setAnchorPoint(cc.p(0,0.5));
+            this.addChild(subLabel1, 3);
+            subLabel1.setPosition(cc.p(200 , size.height/2 -220));
+
+
+        } else if(this._currentBellet == 1){
+            this.gotNextScene();
+        }
 
     }
 });

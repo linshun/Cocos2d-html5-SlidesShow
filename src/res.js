@@ -17,6 +17,12 @@ var s_fishingjoy1 = "res/images/fishingjoy1.png";
 var s_roadmap = "res/images/roadmap.jpg";
 var s_office1 = "res/images/office1.jpg";
 var s_office2 = "res/images/office2.jpg";
+var s_fishingjoylogo = "res/images/main_ui_title_cn.png";
+var s_fishingjoybackground = "res/images/ui_background_normal.jpg";
+var s_mainmenu = "res/images/mainmenu.plist";
+var s_character ="res/images/Character.plist";
+var s_Bird_vibrationSFX = "res/Sounds/Bird_vibration";
+var s_Bird_removeSFX = "res/Sounds/Bird_remove";
 
 var g_res = [
     {type:"image", src:"res/images/bj03_01_sx.jpg"},
@@ -38,5 +44,19 @@ var g_res = [
     {type:"image", src:"res/images/roadmap.jpg"},
     {type:"image", src:"res/images/office1.jpg"},
     {type:"image", src:"res/images/office2.jpg"},
+    {type:"image", src:"res/images/main_ui_title_cn.png"},
+    {type:"image", src:"res/images/ui_background_normal.jpg"},
+    {type:"image", src:"res/images/mainmenu.png"},
+    {type:"image", src:"res/images/Character.png"},
+    {type:"image", src:"res/images/title.png"},
+    {type:"image", src:"res/images/qipao3.png"},
+
+    {type:"effect", src:s_Bird_vibrationSFX},
+    {type:"effect", src:s_Bird_removeSFX},
+
+    {type:"plist", src:"res/images/mainmenu.plist"},
+    {type:"plist", src:"res/images/Character.plist"},
+    {type:"plist", src:"res/images/qipao3.plist"},
+    {type:"plist", src:"res/images/qipao4.plist"},
 
 ]

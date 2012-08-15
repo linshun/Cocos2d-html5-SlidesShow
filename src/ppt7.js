@@ -15,7 +15,7 @@ var ppt7 = ppt.extend({
         roadmap.setAnchorPoint(cc.p(0.5, 0.5));
         roadmap.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(roadmap, 1);
-        roadmap.runAction(cc.ScaleTo.create(0.8, 1.5));
+        roadmap.runAction(cc.ScaleTo.create(0.8, 1.4));
     }
 });
 

@@ -60,6 +60,12 @@ var ppt5 = ppt.extend({
             this.addChild(subLabel1, 3);
             subLabel1.setPosition(cc.p(200, size.height / 2 - 220));
 
+           /* cc.log("div test")
+            var div = cc.$new('div');
+            div.innerHTML = '<a href="http://www.conciz.com/shejuhua/">shejuhua</a>';
+            cc.container.appendChild(div);
+            div.translate(0, -500);*/
+
 
         } else if (this._currentBellet == 1) {
             this.gotNextScene();

@@ -11,6 +11,16 @@ var ppt8 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
+        var webglNews1 = cc.Sprite.create(s_webglNew1);
+        webglNews1.setAnchorPoint(cc.p(0.5, 0.5));
+        webglNews1.setPosition(cc.p(400, size.height -250 ));
+        this.addChild(webglNews1, 0);
+
+        var webglCocos1 = cc.Sprite.create(s_webglCocos1);
+        webglCocos1.setAnchorPoint(cc.p(0.5, 0.5));
+        webglCocos1.setPosition(cc.p(size.width / 2 + 100, size.height / 2-120));
+        this.addChild(webglCocos1, 0);
+
 
     }
 });

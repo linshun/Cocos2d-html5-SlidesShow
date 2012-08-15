@@ -23,6 +23,8 @@ var s_mainmenu = "res/images/mainmenu.plist";
 var s_character = "res/images/Character.plist";
 var s_Bird_vibrationSFX = "res/sounds/Bird_vibration";
 var s_Bird_removeSFX = "res/sounds/Bird_remove";
+var s_webglNew1 = "res/images/webglNews1.png";
+var s_webglCocos1 = "res/images/webglCocos1.png";
 
 var g_res = [
     {type:"image", src:"res/images/bj03_01_sx.jpg"},
@@ -50,6 +52,12 @@ var g_res = [
     {type:"image", src:"res/images/Character.png"},
     {type:"image", src:"res/images/title.png"},
     {type:"image", src:"res/images/qipao3.png"},
+    {type:"image", src:"res/fonts/bitmapFontTest.png"},
+    {type:"image", src:"res/images/webglNews1.png"},
+    {type:"image", src:"res/images/webglCocos1.png"},
+
+    {type:"fnt", src:"res/fonts/bitmapFontTest.fnt"},
+
 
     {type:"effect", src:s_Bird_vibrationSFX},
     {type:"effect", src:s_Bird_removeSFX},

@@ -19,7 +19,7 @@ var pptList = [
         }
     },
     {
-        title:"No Money? why?",
+        title:"No Profit?",
         pptScene:function () {
             return new ppt3.scene();
         }

@@ -35,14 +35,14 @@ var ppt4 = ppt.extend({
         if (this._currentBellet == 0) {
             this._currentBellet++;
             var size = cc.Director.getInstance().getWinSize();
-            var label = cc.LabelTTF.create("开发时间:", "Arial", 58);
+            var label = cc.LabelTTF.create("开发时间:", "Arial", 56);
             //var color = new cc.Color3B(255,0,0);
             //label.setColor(color);
             label.setAnchorPoint(cc.p(0, 0.5));
             this.addChild(label, 3);
-            label.setPosition(cc.p(size.width - 300, 520));
+            label.setPosition(cc.p(size.width - 330, 520));
 
-            var subLabel = cc.LabelTTF.create(" < 40小时", "Arial", 58);
+            var subLabel = cc.LabelTTF.create(" < 40小时!", "Arial", 58);
             //var color = new cc.Color3B(255,0,0);
             //subLabel.setColor(color);
             subLabel.setAnchorPoint(cc.p(0, 0.5));

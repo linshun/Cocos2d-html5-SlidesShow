@@ -4,8 +4,8 @@ var s_backGround1024 = "res/images/background1024.jpg";
 var s_cocos2dx400 = "res/images/cocos2dx400.png";
 var s_visitlist = "res/images/visitlist.png";
 var s_riq = "res/images/riq.jpg";
-var s_google = "res/images/google.png";
-var s_zynga = "res/images/zynga.png";
+var s_google = "res/images/Google.png";
+var s_zynga = "res/images/Zynga.png";
 var s_thirdparty = "res/images/thirdparty.png";
 var s_game1 = "res/images/game1.jpg";
 var s_game21 = "res/images/game21.png";
@@ -31,8 +31,8 @@ var g_res = [
     {type:"image", src:"res/images/cocos2dx400.png"},
     {type:"image", src:"res/images/visitlist.png"},
     {type:"image", src:"res/images/riq.jpg"},
-    {type:"image", src:"res/images/google.png"},
-    {type:"image", src:"res/images/zynga.png"},
+    {type:"image", src:"res/images/Google.png"},
+    {type:"image", src:"res/images/Zynga.png"},
     {type:"image", src:"res/images/thirdparty.png"},
     {type:"image", src:"res/images/game1.jpg"},
     {type:"image", src:"res/images/game21.png"},

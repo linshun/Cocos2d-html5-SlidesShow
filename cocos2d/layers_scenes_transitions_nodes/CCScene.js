@@ -5,7 +5,6 @@
 
  http://www.cocos2d-x.org
 
-
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
@@ -24,45 +23,50 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
-(function () {
-    var d = document;
-    var c = {
-        COCOS2D_DEBUG:2, //0 to turn debug off, 1 for basic debug, and 2 for full debug
-        box2d:false,
-        showFPS:true,
-        frameRate:60,
-        tag:'gameCanvas', //the dom element to run cocos2d on
-        engineDir:"cocos2d/",
-        appFiles:[
-            'src/res.js',
-
-            'src/pptScene.js',
-            'src/mainpage.js',
-            'src/ppt1.js',
-            'src/ppt2.js',
-            'src/ppt3.js',
-            'src/ppt4.js',
-            'src/ppt5.js',
-            'src/ppt6.js',
-            'src/ppt7.js',
-            'src/ppt8.js',
-            'src/ppt9.js',
-            'src/ppt10.js',
-            // effect files
-            'src/effect/LogoWaveLayer.js',
-            'src/effect/effectLayer.js',
-            'src/effect/GameController.js'
 
 
-        ]
-    };
-    window.addEventListener('DOMContentLoaded', function () {
-        //first load engine file if specified
-        var s = d.createElement('script');
-        s.src = c.engineDir + 'platform/jsloader.js';
-        d.body.appendChild(s);
-        s.c = c;
-        s.id = 'cocos2d-html5';
-        //else if single file specified, load singlefile
-    });
-})();
+/**
+ * <p>cc.Scene is a subclass of cc.Node that is used only as an abstract concept.</p>
+ *  <p>cc.Scene an cc.Node are almost identical with the difference that cc.Scene has it's
+ * anchor point (by default) at the center of the screen.</p>
+ *
+ * <p>For the moment cc.Scene has no other logic than that, but in future releases it might have
+ * additional logic.</p>
+ *
+ * <p>It is a good practice to use and cc.Scene as the parent of all your nodes.</p>
+ * @class
+ * @extends cc.Node
+ */
+cc.Scene = cc.Node.extend(/** @lends cc.Scene# */{
+    /**
+     * Constructor
+     */
+    ctor:function () {
+        this._super();
+        this._ignoreAnchorPointForPosition = true;
+        this.setAnchorPoint(cc.p(0.5, 0.5));
+
+        this.setContentSize(cc.Director.getInstance().getWinSize());
+    },
+
+    /**
+     * Initialize
+     * @return {Boolean}
+     */
+    init:function () {
+        this.setContentSize(cc.Director.getInstance().getWinSize());
+        return true;
+    }
+});
+/**
+ * creates a scene
+ * @return {cc.Scene}
+ * @example
+ * // Example
+ * var aScene = cc.Scene.create();
+ * //OR
+ * var aScene = new cc.Scene();
+ */
+cc.Scene.create = function () {
+    return new cc.Scene();
+};

@@ -1,4 +1,3 @@
-
 // Add your ppt list
 var pptList = [
     {
@@ -77,8 +76,6 @@ var pptList = [
 ];
 
 
-
-
 var currentPPT = 0;
 
 // ppt template
@@ -96,14 +93,13 @@ var ppt = cc.Layer.extend({
         var size = cc.Director.getInstance().getWinSize();
 
 
-
         var title = pptList[currentPPT].title;
         var label = cc.LabelTTF.create(title, "Arial", 38);
-        var color = new cc.Color3B(0,154,216);
+        var color = new cc.Color3B(0, 154, 216);
         label.setColor(color);
-        label.setAnchorPoint(cc.p(0,0));
+        label.setAnchorPoint(cc.p(0, 0));
         this.addChild(label, 1);
-        label.setPosition(cc.p(80 , size.height - 90));
+        label.setPosition(cc.p(80, size.height - 90));
 
     },
 
@@ -117,7 +113,7 @@ var ppt = cc.Layer.extend({
     },
 
     onKeyDown:function (e) {
-        if(e == cc.KEY.left){
+        if (e == cc.KEY.left) {
             this.gotPreviousScene();
             cc.log("I am previous key.")
 
@@ -125,7 +121,7 @@ var ppt = cc.Layer.extend({
 
             cc.log("I am next key.")
             this.gotNextScene();
-        } else if (e == cc.KEY.space){
+        } else if (e == cc.KEY.space) {
             cc.log("I am space key.")
             this.addBullet();
         }
@@ -157,7 +153,7 @@ var ppt = cc.Layer.extend({
 
     gotNextScene:function () {
 
-        if (currentPPT < pptList.length-1) {
+        if (currentPPT < pptList.length - 1) {
             currentPPT += 1;
         }
         cc.log(pptList.length);
@@ -175,7 +171,7 @@ var ppt = cc.Layer.extend({
         cc.Director.getInstance().replaceScene(s);
     },
 
-    addBullet:function(){
+    addBullet:function () {
         this.gotNextScene();
     }
 });

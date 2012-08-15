@@ -30,34 +30,33 @@ var ppt4 = ppt.extend({
     },
 
 
-
-    addBullet:function(){
+    addBullet:function () {
         cc.log("ppt4 addBullet.")
-        if(this._currentBellet == 0){
+        if (this._currentBellet == 0) {
             this._currentBellet++;
             var size = cc.Director.getInstance().getWinSize();
             var label = cc.LabelTTF.create("开发时间:", "Arial", 58);
             //var color = new cc.Color3B(255,0,0);
             //label.setColor(color);
-            label.setAnchorPoint(cc.p(0,0.5));
+            label.setAnchorPoint(cc.p(0, 0.5));
             this.addChild(label, 3);
-            label.setPosition(cc.p(size.width -300 , 520));
+            label.setPosition(cc.p(size.width - 300, 520));
 
             var subLabel = cc.LabelTTF.create(" < 40小时", "Arial", 58);
             //var color = new cc.Color3B(255,0,0);
             //subLabel.setColor(color);
-            subLabel.setAnchorPoint(cc.p(0,0.5));
+            subLabel.setAnchorPoint(cc.p(0, 0.5));
             this.addChild(subLabel, 3);
-            subLabel.setPosition(cc.p(size.width -300 , 440));
+            subLabel.setPosition(cc.p(size.width - 300, 440));
 
-        } else if(this._currentBellet == 1){
+        } else if (this._currentBellet == 1) {
             this.gotNextScene();
         }
 
     }
 });
 
-ppt4.scene = function(){
+ppt4.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt4();
     layer.init();

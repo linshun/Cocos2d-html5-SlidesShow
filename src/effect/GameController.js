@@ -93,7 +93,7 @@ Birzzle.start = function () {
 
 Birzzle.playBackgroundMusic = function (path, loop) {
     if (Birzzle.Sound == true) {
-            cc.AudioEngine.getInstance().playBackgroundMusic(path, loop);
+        cc.AudioEngine.getInstance().playBackgroundMusic(path, loop);
     }
 };
 

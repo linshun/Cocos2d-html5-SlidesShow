@@ -1,6 +1,6 @@
 var ppt1 = ppt.extend({
 
-    _currentBellet: 0,
+    _currentBellet:0,
 
     onEnter:function () {
 
@@ -18,7 +18,7 @@ var ppt1 = ppt.extend({
         //label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
         this.addChild(framework, 1);
-        framework.setPosition(cc.p(size.width/2 , size.height/2));
+        framework.setPosition(cc.p(size.width / 2, size.height / 2));
         framework.runAction(cc.ScaleTo.create(0.5, 1.4));
     },
 
@@ -30,7 +30,7 @@ var ppt1 = ppt.extend({
 
 });
 
-ppt1.scene = function(){
+ppt1.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt1();
     layer.init();

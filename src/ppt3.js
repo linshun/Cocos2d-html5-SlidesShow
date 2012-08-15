@@ -13,7 +13,7 @@ var ppt3 = ppt.extend({
     }
 });
 
-ppt3.scene = function(){
+ppt3.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt3();
     layer.init();

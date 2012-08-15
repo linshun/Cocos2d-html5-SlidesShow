@@ -1,6 +1,6 @@
 var ppt2 = ppt.extend({
 
-    _currentBellet: 0,
+    _currentBellet:0,
     _riq:null,
     _google:null,
     _gameFromScratch:null,
@@ -26,12 +26,12 @@ var ppt2 = ppt.extend({
 
     onTouchBegan:function (touch, e) {
         cc.log("touch began");
-       this.addBullet();
+        this.addBullet();
     },
 
-    addBullet:function(){
+    addBullet:function () {
         var size = cc.Director.getInstance().getWinSize();
-        if(this._currentBellet == 0) {
+        if (this._currentBellet == 0) {
             this._google = cc.Sprite.create(s_google);
             this._google.setAnchorPoint(cc.p(0.5, 0.5));
             this._google.setPosition(cc.p(size.width / 2, size.height / 2));
@@ -40,7 +40,7 @@ var ppt2 = ppt.extend({
             this._currentBellet++;
             this._google.runAction(cc.ScaleTo.create(1, 0.8));
 
-        } else if(this._currentBellet == 1){
+        } else if (this._currentBellet == 1) {
             this._google.runAction(cc.ScaleTo.create(1, 0.2));
             this._google.runAction(cc.MoveTo.create(1, cc.p(200, 100)));
             cc.log("add riq");
@@ -66,10 +66,10 @@ var ppt2 = ppt.extend({
             this._gameFromScratch.runAction(cc.ScaleTo.create(1, 0.8));
             this.addChild(this._gameFromScratch, 2);
             this._currentBellet++;
-        } else if(this._currentBellet == 3){
+        } else if (this._currentBellet == 3) {
             this._currentBellet++;
             this._gameFromScratch.runAction(cc.ScaleTo.create(1, 0.15));
-            this._gameFromScratch.runAction(cc.MoveTo.create(1, cc.p(size.width -200, 100)));
+            this._gameFromScratch.runAction(cc.MoveTo.create(1, cc.p(size.width - 200, 100)));
 
         } else {
             this.gotNextScene();
@@ -79,7 +79,7 @@ var ppt2 = ppt.extend({
 
 });
 
-ppt2.scene = function(){
+ppt2.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt2();
     layer.init();

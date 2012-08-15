@@ -134,19 +134,19 @@ Birzzle.MainmenuLayer = cc.Layer.extend({
         main_title.runAction(cc.RepeatForever.create(cc.Sequence.create(main_titleMoveByDown, main_titleMoveByUp)));
 
         /*var ttf = cc.LabelTTF.create("如何快速开发HTML5游戏？","微软雅黑 Bold",45);
-        ttf.setPosition(cc.p(512,420));
-        ttf.setColor(new cc.Color3B(117,25,0));
-        this.addChild(ttf);
+         ttf.setPosition(cc.p(512,420));
+         ttf.setColor(new cc.Color3B(117,25,0));
+         this.addChild(ttf);
 
-        var ccs = cc.MenuItemImage.create("images/cocos2d.png","images/cocos2d.png",this,this.goPPT1);
-        ccs.setPosition(cc.p(0,-240));
-        var menu = cc.Menu.create(ccs);
-        this.addChild(menu);*/
+         var ccs = cc.MenuItemImage.create("images/cocos2d.png","images/cocos2d.png",this,this.goPPT1);
+         ccs.setPosition(cc.p(0,-240));
+         var menu = cc.Menu.create(ccs);
+         this.addChild(menu);*/
     },
     /*goPPT1:function(){
-        var s = ppt1.scene();
-         cc.Director.getInstance().replaceScene(cc.TransitionProgressRadialCW.create(1.0,s));
-    },*/
+     var s = ppt1.scene();
+     cc.Director.getInstance().replaceScene(cc.TransitionProgressRadialCW.create(1.0,s));
+     },*/
     onEnter:function () {
         cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, 0, true);
         this._super();
@@ -166,42 +166,42 @@ Birzzle.MainmenuLayer = cc.Layer.extend({
         }
     },
 
-   /* _setupBackground:function () {
+    /* _setupBackground:function () {
 
-        var bg_sky = cc.Sprite.create("images/menuBg.jpg");
-        bg_sky.setPosition(cc.p(0, 0));
-        bg_sky.setAnchorPoint(cc.p(0, 0));
-        this.addChild(bg_sky, Birzzle.LayerType.backgroud);
+     var bg_sky = cc.Sprite.create("images/menuBg.jpg");
+     bg_sky.setPosition(cc.p(0, 0));
+     bg_sky.setAnchorPoint(cc.p(0, 0));
+     this.addChild(bg_sky, Birzzle.LayerType.backgroud);
 
-        //setup light
-        var main_bg_light = Birzzle.WhiteLightSprite.createWithSpriteFrameName("main_bg_light.png");
-        main_bg_light.setPosition(cc.p(512, 200));
-        main_bg_light.setAnchorPoint(cc.p(0.5, 0.5));
-        main_bg_light.setScale(1.8);
-        this.addChild(main_bg_light, Birzzle.LayerType.backgroud);
+     //setup light
+     var main_bg_light = Birzzle.WhiteLightSprite.createWithSpriteFrameName("main_bg_light.png");
+     main_bg_light.setPosition(cc.p(512, 200));
+     main_bg_light.setAnchorPoint(cc.p(0.5, 0.5));
+     main_bg_light.setScale(1.8);
+     this.addChild(main_bg_light, Birzzle.LayerType.backgroud);
 
-        for (var i = 1; i <= 6; i++) {
-            var main_bg_lightTemp = Birzzle.WhiteLightSprite.createWithSpriteFrameName("main_bg_light.png");
-            main_bg_lightTemp.setPosition(cc.p(main_bg_light.getContentSize().width / 2, main_bg_light.getContentSize().height / 2));
-            main_bg_lightTemp.setAnchorPoint(cc.p(0.5, 0.5));
-            main_bg_lightTemp.setRotation(i * 30);
-            //main_bg_lightTemp.setScale(1.2);
-            main_bg_light.addChild(main_bg_lightTemp, Birzzle.LayerType.backgroud);
-        }
-        var rotateAction = cc.RotateBy.create(0.5, 10);
-        main_bg_light.runAction(cc.RepeatForever.create(rotateAction));
+     for (var i = 1; i <= 6; i++) {
+     var main_bg_lightTemp = Birzzle.WhiteLightSprite.createWithSpriteFrameName("main_bg_light.png");
+     main_bg_lightTemp.setPosition(cc.p(main_bg_light.getContentSize().width / 2, main_bg_light.getContentSize().height / 2));
+     main_bg_lightTemp.setAnchorPoint(cc.p(0.5, 0.5));
+     main_bg_lightTemp.setRotation(i * 30);
+     //main_bg_lightTemp.setScale(1.2);
+     main_bg_light.addChild(main_bg_lightTemp, Birzzle.LayerType.backgroud);
+     }
+     var rotateAction = cc.RotateBy.create(0.5, 10);
+     main_bg_light.runAction(cc.RepeatForever.create(rotateAction));
 
-        var mainFrontTreeLeft = cc.Sprite.createWithSpriteFrameName("main_trees_a.png");
-        mainFrontTreeLeft.setPosition(cc.p(0, cc.originalCanvasSize.height - mainFrontTreeLeft.getContentSize().height));
-        mainFrontTreeLeft.setAnchorPoint(cc.p(0, 0));
-        this.addChild(mainFrontTreeLeft, Birzzle.LayerType.front);
+     var mainFrontTreeLeft = cc.Sprite.createWithSpriteFrameName("main_trees_a.png");
+     mainFrontTreeLeft.setPosition(cc.p(0, cc.originalCanvasSize.height - mainFrontTreeLeft.getContentSize().height));
+     mainFrontTreeLeft.setAnchorPoint(cc.p(0, 0));
+     this.addChild(mainFrontTreeLeft, Birzzle.LayerType.front);
 
-        var mainFrontTreeRight = cc.Sprite.createWithSpriteFrameName("main_trees_b.png");
-        mainFrontTreeRight.setPosition(cc.p(cc.originalCanvasSize.width - mainFrontTreeRight.getContentSize().width,
-            cc.originalCanvasSize.height - mainFrontTreeRight.getContentSize().height));
-        mainFrontTreeRight.setAnchorPoint(cc.p(0, 0));
-        this.addChild(mainFrontTreeRight, Birzzle.LayerType.front);
-    },*/
+     var mainFrontTreeRight = cc.Sprite.createWithSpriteFrameName("main_trees_b.png");
+     mainFrontTreeRight.setPosition(cc.p(cc.originalCanvasSize.width - mainFrontTreeRight.getContentSize().width,
+     cc.originalCanvasSize.height - mainFrontTreeRight.getContentSize().height));
+     mainFrontTreeRight.setAnchorPoint(cc.p(0, 0));
+     this.addChild(mainFrontTreeRight, Birzzle.LayerType.front);
+     },*/
 
     _itemForTouch:function (touch) {
         var touchLocation = touch.getLocation();
@@ -224,39 +224,39 @@ Birzzle.MainmenuLayer = cc.Layer.extend({
 });
 
 /*cc.adjustSizeForWindow = function () {
-    if (document.documentElement.clientHeight > cc.originalCanvasSize.height)
-        return;
+ if (document.documentElement.clientHeight > cc.originalCanvasSize.height)
+ return;
 
-    var margin = document.documentElement.clientWidth - document.body.clientWidth;
-    if (document.documentElement.clientWidth < cc.originalCanvasSize.width) {
-        cc.canvas.width = cc.originalCanvasSize.width;
-    } else {
-        cc.canvas.width = document.documentElement.clientWidth - margin;
-    }
-    //if (document.documentElement.clientHeight < cc.originalCanvasSize.height) {
-    //cc.canvas.height = cc.originalCanvasSize.height;
-    //} else {
-    cc.canvas.height = document.documentElement.clientHeight - margin - 5;
-    //}
+ var margin = document.documentElement.clientWidth - document.body.clientWidth;
+ if (document.documentElement.clientWidth < cc.originalCanvasSize.width) {
+ cc.canvas.width = cc.originalCanvasSize.width;
+ } else {
+ cc.canvas.width = document.documentElement.clientWidth - margin;
+ }
+ //if (document.documentElement.clientHeight < cc.originalCanvasSize.height) {
+ //cc.canvas.height = cc.originalCanvasSize.height;
+ //} else {
+ cc.canvas.height = document.documentElement.clientHeight - margin - 5;
+ //}
 
-    var xScale = cc.canvas.width / cc.originalCanvasSize.width;
-    var yScale = cc.canvas.height / cc.originalCanvasSize.height;
-    if (xScale > yScale) {
-        xScale = yScale;
-    }
-    cc.canvas.width = cc.originalCanvasSize.width * xScale;
-    cc.canvas.height = cc.originalCanvasSize.height * xScale;
+ var xScale = cc.canvas.width / cc.originalCanvasSize.width;
+ var yScale = cc.canvas.height / cc.originalCanvasSize.height;
+ if (xScale > yScale) {
+ xScale = yScale;
+ }
+ cc.canvas.width = cc.originalCanvasSize.width * xScale;
+ cc.canvas.height = cc.originalCanvasSize.height * xScale;
 
-    var parentElement = document.getElementById("Cocos2dGameContainer");
-    if(parentElement){
-        parentElement.style.width = cc.canvas.width + "px";
-        parentElement.style.height = cc.canvas.height + "px";
-    }
+ var parentElement = document.getElementById("Cocos2dGameContainer");
+ if(parentElement){
+ parentElement.style.width = cc.canvas.width + "px";
+ parentElement.style.height = cc.canvas.height + "px";
+ }
 
-    cc.renderContext.translate(0, cc.canvas.height);
-    cc.renderContext.scale(xScale, xScale);
-    cc.Director.getInstance().setContentScaleFactor(xScale);
-};*/
+ cc.renderContext.translate(0, cc.canvas.height);
+ cc.renderContext.scale(xScale, xScale);
+ cc.Director.getInstance().setContentScaleFactor(xScale);
+ };*/
 
 Birzzle.MenuBirdState = {normal:0, shake:1, destroying:2, destroyed:3};
 
@@ -310,9 +310,9 @@ Birzzle.MenuBird = cc.Sprite.extend({
         this.removeFromParentAndCleanup(true);
     },
 
-    doFailAction:function(){
+    doFailAction:function () {
         var selfPointer = this;
-        var downAction = cc.MoveBy.create(0.5 , new cc.Point(0, -(100 + Math.random() * 200)));
+        var downAction = cc.MoveBy.create(0.5, new cc.Point(0, -(100 + Math.random() * 200)));
 
         this.runAction(cc.Sequence.create(downAction, cc.CallFunc.create(this, function () {
             selfPointer.shake();
@@ -325,7 +325,6 @@ Birzzle.MenuBird.create = function (spriteFrameName, type) {
     block.initWithSpriteFrame(cc.SpriteFrameCache.getInstance().getSpriteFrame(spriteFrameName));
     return block;
 };
-
 
 
 Birzzle.MenuBirdEffect = cc.Node.extend({

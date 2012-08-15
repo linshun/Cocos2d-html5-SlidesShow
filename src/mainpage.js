@@ -44,33 +44,33 @@ var MainPage = ppt.extend({
         //label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
         this.addChild(label, 1);
-        label.setPosition(cc.p(650 , size.height/2+100));
+        label.setPosition(cc.p(650, size.height / 2 + 100));
 
         var subLabel = cc.LabelTTF.create("-- Base on Cocos2d-html5", "Arial", 24);
         //var color = new cc.Color3B(0,154,216);
         //label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
         this.addChild(subLabel, 1);
-        subLabel.setPosition(cc.p(800 , size.height/2+50));
+        subLabel.setPosition(cc.p(800, size.height / 2 + 50));
 
         var speakerLabel = cc.LabelTTF.create("@林顺sean", "Arial", 24);
         //var color = new cc.Color3B(0,154,216);
         //label.setColor(color);
         //speakerLabel.setAnchorPoint(cc.p(0,0));
         this.addChild(speakerLabel, 1);
-        speakerLabel.setPosition(cc.p(650 , size.height/2-100));
+        speakerLabel.setPosition(cc.p(650, size.height / 2 - 100));
 
         var teamLabel = cc.LabelTTF.create("Cocos2d-x Team", "Arial", 24);
         //var color = new cc.Color3B(0,154,216);
         //label.setColor(color);
         //speakerLabel.setAnchorPoint(cc.p(0,0));
         this.addChild(teamLabel, 1);
-        teamLabel.setPosition(cc.p(650 , size.height/2-150));
+        teamLabel.setPosition(cc.p(650, size.height / 2 - 150));
 
     }
 });
 
-MainPage.scene = function(){
+MainPage.scene = function () {
     var ret = cc.Scene.create();
     var layer = new MainPage();
     layer.init();

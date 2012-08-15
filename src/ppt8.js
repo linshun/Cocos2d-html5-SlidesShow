@@ -15,7 +15,7 @@ var ppt8 = ppt.extend({
     }
 });
 
-ppt8.scene = function(){
+ppt8.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt8();
     layer.init();

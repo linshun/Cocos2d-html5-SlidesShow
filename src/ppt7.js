@@ -11,7 +11,7 @@ var ppt7 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
-        var roadmap =cc.Sprite.create(s_roadmap);
+        var roadmap = cc.Sprite.create(s_roadmap);
         roadmap.setAnchorPoint(cc.p(0.5, 0.5));
         roadmap.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(roadmap, 1);
@@ -19,7 +19,7 @@ var ppt7 = ppt.extend({
     }
 });
 
-ppt7.scene = function(){
+ppt7.scene = function () {
     var ret = cc.Scene.create();
     var layer = new ppt7();
     layer.init();

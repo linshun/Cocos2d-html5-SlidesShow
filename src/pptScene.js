@@ -19,7 +19,7 @@ var pptList = [
         }
     },
     {
-        title:"No Profit?",
+        title:"",   //No Profit?
         pptScene:function () {
             return ppt3.scene();
         }
@@ -43,7 +43,7 @@ var pptList = [
         }
     },
     {
-        title:"RoadMap",
+        title:"Roadmap",
         pptScene:function () {
             return ppt7.scene();
         }

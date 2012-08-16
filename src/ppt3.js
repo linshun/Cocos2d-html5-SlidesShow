@@ -25,7 +25,7 @@ var ppt3 = ppt.extend({
         label.setPosition(cc.p(s.width / 2, s.height / 2));
         label.setAnchorPoint(cc.p(0.5, 0.5));
 
-        var NChar = label.getChildByTag(0);
+       /* var NChar = label.getChildByTag(0);
         var OChar = label.getChildByTag(1);
         var questionmarkChar = label.getChildByTag(10);
 
@@ -49,7 +49,7 @@ var ppt3 = ppt.extend({
         questionmarkChar.runAction(scale_4ever);
 
         OChar.runAction(rot_4ever);
-        NChar.runAction(fade_4ever);
+        NChar.runAction(fade_4ever);*/
 
     }
 });

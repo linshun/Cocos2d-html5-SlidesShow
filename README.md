@@ -6,10 +6,10 @@ Slides show template
 
 How to play
 -------------
-   "space" key:  bullet and go next page.
-   "Left" key:  go previous page.
-   "right" key: go next page.
-   Touch event: do some action and effect.
+   * "space" key:  bullet and go next page.
+   * "Left" key:  go previous page.
+   * "right" key: go next page.
+   * Touch event: do some action and effect.
 
 Documentation
 ------------------

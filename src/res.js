@@ -23,10 +23,31 @@ var s_mainmenu = "res/images/mainmenu.plist";
 var s_character = "res/images/Character.plist";
 var s_Bird_vibrationSFX = "res/sounds/Bird_vibration";
 var s_Bird_removeSFX = "res/sounds/Bird_remove";
+var s_myHeartWillGoOn = "res/sounds/myHeartWillGoOn"
 var s_webglNew1 = "res/images/webglNews1.png";
 var s_webglCocos1 = "res/images/webglCocos1.png";
+var s_moon = "res/images/moon.jpg";
+var s_bridge = "res/images/bridge.png";
+var s_niulang = "res/images/niulang.png";
+var s_zhinv = "res/images/zhinv.png";
+var s_snow = "res/images/snow.png";
+var s_stars1 = "res/images/stars.png";
+
+// MoonWarriors
+var s_loading = "res/images/loading.png";
+var s_ship01 = "res/images/ship01.png";
+var s_menu = "res/images/menu.png";
+var s_logo = "res/images/logo.png";
+var s_flare = "res/images/flare.jpg";
+var s_iphone4base = "res/images/iphone4base.png";
+var s_iphone4reflect = "res/images/iphone4reflect.png";
+var s_mainMainMusic = "res/sounds/mainMainMusic";
+var s_buttonEffect = "res/sounds/buttonEffet";
+var s_fireEffect = "res/sounds/fireEffect";
+
 
 var g_res = [
+    // image
     {type:"image", src:"res/images/bj03_01_sx.jpg"},
     {type:"image", src:"res/images/mainpage1024.jpg"},
     {type:"image", src:"res/images/background1024.jpg"},
@@ -55,13 +76,34 @@ var g_res = [
     {type:"image", src:"res/fonts/bitmapFontTest.png"},
     {type:"image", src:"res/images/webglNews1.png"},
     {type:"image", src:"res/images/webglCocos1.png"},
+    {type:"image", src:"res/images/githubhistory.png"},
+    {type:"image", src:"res/images/iphone4base.png"},
+    {type:"image", src:"res/images/iphone4reflect.png"},
+    {type:"image", src:"res/images/bridge.png"},
+    {type:"image", src:"res/images/snow.png"},
+    {type:"image", src:"res/images/stars.png"},
 
+    {type:"image", src:s_loading},
+    {type:"image", src:s_ship01},
+    {type:"image", src:s_menu},
+    {type:"image", src:s_logo},
+    {type:"image", src:s_flare},
+
+    //fnt
     {type:"fnt", src:"res/fonts/bitmapFontTest.fnt"},
 
+    //music
+    {type:"bgm", src:s_mainMainMusic},
+    {type:"bgm", src:s_myHeartWillGoOn},
 
+
+    // effect
     {type:"effect", src:s_Bird_vibrationSFX},
     {type:"effect", src:s_Bird_removeSFX},
+    {type:"effect", src:s_fireEffect},
+    {type:"effect", src:s_buttonEffect},
 
+    // plist
     {type:"plist", src:"res/images/mainmenu.plist"},
     {type:"plist", src:"res/images/Character.plist"},
     {type:"plist", src:"res/images/qipao3.plist"},

@@ -7,19 +7,19 @@ var pptList = [
         }
     },
     {
-        title:"What is Cocos2d-html5?",
+        title:"Why Cocos2d-html5?",
         pptScene:function () {
             return ppt1.scene();
         }
     },
     {
-        title:"We are a Big Family",
+        title:"That is how it goes",
         pptScene:function () {
             return ppt2.scene();
         }
     },
     {
-        title:"",   //No Profit?
+        title:"What is next?",   //No Profit?
         pptScene:function () {
             return ppt3.scene();
         }
@@ -36,30 +36,35 @@ var pptList = [
             return ppt5.scene();
         }
     },
+
+    {
+        title:"DOM Debug",
+        pptScene:function () {
+            return ppt7.scene();
+        }
+    },
+
+    {
+        title:"Closure Compiler",
+        pptScene:function () {
+            return ppt9.scene();
+        }
+    },
+
+    {
+        title:"Performance Test",
+        pptScene:function () {
+            return ppt8.scene();
+        }
+    },
+
     {
         title:"Of Course FishingJoy",
         pptScene:function () {
             return ppt6.scene();
         }
     },
-    {
-        title:"Roadmap",
-        pptScene:function () {
-            return ppt7.scene();
-        }
-    },
-    {
-        title:"WebGL",
-        pptScene:function () {
-            return ppt8.scene();
-        }
-    },
-    {
-        title:"About Us",
-        pptScene:function () {
-            return ppt9.scene();
-        }
-    },
+
     {
         title:"", // Q & A
         pptScene:function () {
@@ -67,12 +72,6 @@ var pptList = [
         }
     }
 
-    //ppt4,
-    //ppt5,
-    //ppt6,
-    //ppt7,
-    //ppt8,
-    //ppt9
 ];
 
 

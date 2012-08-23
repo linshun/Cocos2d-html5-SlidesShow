@@ -51,7 +51,9 @@
             // effect files
             'src/effect/LogoWaveLayer.js',
             'src/effect/effectLayer.js',
-            'src/effect/GameController.js'
+            'src/effect/GameController.js',
+            'src/effect/MoonWarriorsMenu.js',
+            'src/effect/flareEffect.js'
 
 
         ]

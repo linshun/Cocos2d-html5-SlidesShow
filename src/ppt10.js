@@ -18,7 +18,7 @@ var ppt10 = ppt.extend({
         //cc.DOM.convert(logo);
         this.addChild(logo, 1);
 
-        var label = cc.LabelTTF.create("Q & A", "Arial", 78);
+        var label = cc.LabelTTF.create("Q ? A : Thanks", "Arial", 78);
         //var color = new cc.Color3B(0,154,216);
         //label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));

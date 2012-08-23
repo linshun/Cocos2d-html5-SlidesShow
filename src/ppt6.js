@@ -68,6 +68,8 @@ var ppt6 = ppt.extend({
         particle3.setDrawMode(cc.PARTICLE_TEXTURE_MODE);
         particle3.setPosition(cc.p(200, 200));
     }
+
+
 });
 
 ppt6.scene = function () {

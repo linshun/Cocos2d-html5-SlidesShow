@@ -47,7 +47,7 @@ var ppt7 = ppt.extend({
         cc.AudioEngine.getInstance().setBackgroundMusicVolume(0.7);
         cc.AudioEngine.getInstance().playBackgroundMusic(s_myHeartWillGoOn, true);
 
-       /* // Snow
+       // Snow
         this._emitter = cc.ParticleSnow.create();
         this.addChild(this._emitter, 10);
 
@@ -79,7 +79,7 @@ var ppt7 = ppt.extend({
         this._emitter.setTexture(cc.TextureCache.getInstance().addImage(s_snow));
         this._emitter.setShapeType(cc.PARTICLE_STAR_SHAPE);
 
-        //this.setEmitterPosition();*/
+        //this.setEmitterPosition();
 
 
     },

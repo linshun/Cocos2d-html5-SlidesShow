@@ -1,7 +1,7 @@
 var s_backGround = "res/images/bj03_01_sx.jpg";
 var s_mainpage1024 = "res/images/mainpage1024.jpg";
 var s_backGround1024 = "res/images/background1024.jpg";
-var s_cocos2dx400 = "res/images/cocos2dx400.png";
+var s_cocos2dhtml5 = "res/images/cocos2dhtml5logo.png";
 var s_visitlist = "res/images/visitlist.png";
 var s_riq = "res/images/riq.jpg";
 var s_google = "res/images/Google.png";
@@ -32,6 +32,7 @@ var s_niulang = "res/images/niulang.png";
 var s_zhinv = "res/images/zhinv.png";
 var s_snow = "res/images/snow.png";
 var s_stars1 = "res/images/stars.png";
+var s_sakura = "res/images/sakura.png";
 
 // MoonWarriors
 var s_loading = "res/images/loading.png";
@@ -51,7 +52,7 @@ var g_res = [
     {type:"image", src:"res/images/bj03_01_sx.jpg"},
     {type:"image", src:"res/images/mainpage1024.jpg"},
     {type:"image", src:"res/images/background1024.jpg"},
-    {type:"image", src:"res/images/cocos2dx400.png"},
+    {type:"image", src:"res/images/cocos2dhtml5logo.png"},
     {type:"image", src:"res/images/visitlist.png"},
     {type:"image", src:"res/images/riq.jpg"},
     {type:"image", src:"res/images/Google.png"},
@@ -82,6 +83,7 @@ var g_res = [
     {type:"image", src:"res/images/bridge.png"},
     {type:"image", src:"res/images/snow.png"},
     {type:"image", src:"res/images/stars.png"},
+    {type:"image", src:"res/images/sakura.png"},
 
     {type:"image", src:s_loading},
     {type:"image", src:s_ship01},

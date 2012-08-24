@@ -176,15 +176,24 @@ window.stopSnow = function () {
 
 };
 
-window.starSnow = function () {
+window.sakura = function () {
     window.snowLayer.noParticle();
     // Snow
     window.snowLayer._emitter = cc.ParticleSnow.create();
-    window.snowLayer.addChild(window.snowLayer._emitter, 10);
+    var layer = cc.Layer.create();
+    layer.setRotation(-70);
+    layer.setPositionX(-100);
+    layer.addChild(window.snowLayer._emitter,0);
+    window.snowLayer.addChild(layer, 10);
+    window.snowLayer._emitter.initWithTotalParticles(60);
+
+    window.snowLayer._emitter._dontTint = true;
+    //window.snowLayer._emitter.setRotatePerSecond(0);
+    //window.snowLayer._emitter.setRotatePerSecondVar(200);
 
     var p = window.snowLayer._emitter.getPosition();
     window.snowLayer._emitter.setPosition(cc.p(p.x, p.y - 110));
-    window.snowLayer._emitter.setLife(3);
+    window.snowLayer._emitter.setLife(5);
     window.snowLayer._emitter.setLifeVar(1);
 
     // gravity
@@ -192,23 +201,13 @@ window.starSnow = function () {
 
     // speed of particles
     window.snowLayer._emitter.setSpeed(130);
-    window.snowLayer._emitter.setSpeedVar(30);
+    window.snowLayer._emitter.setSpeedVar(50);
 
-
-    /*var startColor = this._emitter.getStartColor();
-     startColor.r = 0.9;
-     startColor.g = 0.9;
-     startColor.b = 0.9;
-     this._emitter.setStartColor(startColor);
-
-     var startColorVar = this._emitter.getStartColorVar();
-     startColorVar.b = 0.1;
-     this._emitter.setStartColorVar(startColorVar);*/
 
     window.snowLayer._emitter.setEmissionRate(window.snowLayer._emitter.getTotalParticles() / window.snowLayer._emitter.getLife());
 
-    window.snowLayer._emitter.setTexture(cc.TextureCache.getInstance().addImage(s_snow));
-    window.snowLayer._emitter.setShapeType(cc.PARTICLE_STAR_SHAPE);
+    window.snowLayer._emitter.setTexture(cc.TextureCache.getInstance().addImage(s_sakura));
+    window.snowLayer._emitter.setDrawMode(cc.PARTICLE_TEXTURE_MODE);
 
     //this.setEmitterPosition();
 

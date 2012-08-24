@@ -26,6 +26,7 @@ var s_Bird_removeSFX = "res/sounds/Bird_remove";
 var s_myHeartWillGoOn = "res/sounds/myHeartWillGoOn"
 var s_webglNew1 = "res/images/webglNews1.png";
 var s_webglCocos1 = "res/images/webglCocos1.png";
+var s_githubhistory = "res/images/githubhistory.png";
 var s_moon = "res/images/moon.jpg";
 var s_bridge = "res/images/bridge.png";
 var s_niulang = "res/images/niulang.png";
@@ -36,6 +37,11 @@ var s_sakura = "res/images/sakura.png";
 var s_webgldemo = "res/images/webgl_demo.jpg";
 var s_job = "res/images/job.jpg";
 var s_plugin = "res/images/plugin.png";
+var s_videoTutorial = "res/images/videoTutorial.png";
+var s_closureCompiler = "res/images/closureCompiler.png";
+var s_cocos2dhtml5Banner = "res/images/html5-banner.png";
+var s_alpha1 = "res/images/alpha1.png";
+var s_alpha2 = "res/images/alpha2.png";
 
 // MoonWarriors
 var s_loading = "res/images/loading.png";
@@ -48,6 +54,7 @@ var s_iphone4reflect = "res/images/iphone4reflect.png";
 var s_mainMainMusic = "res/sounds/mainMainMusic";
 var s_buttonEffect = "res/sounds/buttonEffet";
 var s_fireEffect = "res/sounds/fireEffect";
+var s_moonwarriors = "res/images/moonwarriors.jpg";
 
 
 var g_res = [
@@ -90,6 +97,12 @@ var g_res = [
     {type:"image", src:"res/images/webgl_demo.jpg"},
     {type:"image", src:"res/images/job.jpg"},
     {type:"image", src:"res/images/plugin.png"},
+    {type:"image", src:"res/images/moonwarriors.jpg"},
+    {type:"image", src:"res/images/videoTutorial.png"},
+    {type:"image", src:"res/images/closureCompiler.png"},
+    {type:"image", src:"res/images/html5-banner.png"},
+    {type:"image", src:"res/images/alpha1.png"},
+    {type:"image", src:"res/images/alpha2.png"},
 
     {type:"image", src:s_loading},
     {type:"image", src:s_ship01},

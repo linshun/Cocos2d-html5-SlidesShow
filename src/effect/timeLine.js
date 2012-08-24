@@ -159,24 +159,39 @@ var TimeLineppt = cc.Scene.extend({
     },
     onEnter:function(){
         this._super();
-        var mysprite = cc.Sprite.create(s_job);
-        var sprite2 = cc.Sprite.create(s_job);
-        var sprite3 = cc.Sprite.create(s_job);
+        var job = cc.Sprite.create(s_job);
+        var moonWarriors = cc.Sprite.create(s_moonwarriors);
+        moonWarriors.setScale(1.2);
+        var gitHubHistory = cc.Sprite.create(s_githubhistory);
+        gitHubHistory.setScale(0.8, 1.1);
+        var gameFromScratch = cc.Sprite.create(s_thirdparty);
+        gameFromScratch.setScale(0.7, 0.6);
+
+        var videoTutorial = cc.Sprite.create(s_videoTutorial);
+        videoTutorial.setScale(1.2);
+        var closureCompiler = cc.Sprite.create(s_closureCompiler);
+        //closureCompiler.setScale(0.7, 0.6);       s_cocos2dhtml5Banner
+        var cocos2dhtml5Banner = cc.Sprite.create(s_cocos2dhtml5Banner);
+        //cocos2dhtml5Banner.setScale(1.2);
+        var alpha1 = cc.Sprite.create(s_alpha1);
+        //cocos2dhtml5Banner.setScale(1.2);
+        var alpha2 = cc.Sprite.create(s_alpha2);
+        //cocos2dhtml5Banner.setScale(1.2);
 
         var sprite4 = cc.Sprite.create(s_job);
 
-        this.addEntry(1,3, 'Cocos2d-html5 Start!!', mysprite);
-        this.addEntry(30,3, 'DevCon!',sprite2);
-        this.addEntry(28,5, 'Alpha1 Release!!!', sprite3);
-        this.addEntry(29,5, 'MoonWarriors!',sprite4);
-        this.addEntry(2,6, 'Video Tutorial');
-        this.addEntry(6,6, 'GameFromScratch Tutorials');
+        this.addEntry(1,3, 'Cocos2d-html5 Start!!', cocos2dhtml5Banner);
+        //this.addEntry(30,3, 'DevCon!');
+        this.addEntry(28,5, 'Alpha1 Release!!!', alpha1);
+        this.addEntry(1,6, 'MoonWarriors!',moonWarriors);
+        this.addEntry(2,6, 'Video Tutorial', videoTutorial);
+        this.addEntry(6,6, 'GameFromScratch Tutorials', gameFromScratch);
 
-        this.addEntry(8,6, 'Closure Compiler Supported!!', mysprite);
-        this.addEntry(17,6, 'JSDoc!',sprite2);
-        this.addEntry(18,6, 'Alpha2 Release!!!', sprite3);
-        this.addEntry(28,7, 'Finalized for 3 Engines!',sprite4);
-        this.addEntry(15,8, 'Cocos2d-html5 Job!');
+        this.addEntry(8,6, 'Closure Compiler Supported!!', closureCompiler );
+        this.addEntry(17,6, 'JSDoc!', gitHubHistory);
+        this.addEntry(18,6, 'Alpha2 Release!!!', alpha2);
+        this.addEntry(28,7, 'API Finalized for 3 Engines!');
+        this.addEntry(15,8, 'Cocos2d-html5 Job!', job);
         this.addEntry(28,8, 'V2.0 Release!');
 
         window.coolppt = this;

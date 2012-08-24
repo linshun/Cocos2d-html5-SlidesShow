@@ -32,9 +32,10 @@ var ppt3 = ppt.extend({
             //plugin.setScale(0.6);
             this.addChild(plugin, 1);
 
-
-            // tools
+        } else {
+            this.gotNextScene();
         }
+
     }
 
 

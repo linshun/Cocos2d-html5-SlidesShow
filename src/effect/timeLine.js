@@ -174,9 +174,9 @@ var TimeLineppt = cc.Scene.extend({
         var cocos2dhtml5Banner = cc.Sprite.create(s_cocos2dhtml5Banner);
         //cocos2dhtml5Banner.setScale(1.2);
         var alpha1 = cc.Sprite.create(s_alpha1);
-        //cocos2dhtml5Banner.setScale(1.2);
+        alpha1.setScale(1.4);
         var alpha2 = cc.Sprite.create(s_alpha2);
-        //cocos2dhtml5Banner.setScale(1.2);
+        alpha2.setScale(1.2);
 
         var sprite4 = cc.Sprite.create(s_job);
 

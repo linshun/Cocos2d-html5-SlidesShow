@@ -24,6 +24,14 @@ var pptList = [
             return ppt3.scene();
         }
     },
+
+    {
+        title:"Happy Children's Day!",   //No Profit?
+        pptScene:function () {
+            return pptHappy61.scene();
+        }
+    },
+
     {
         title:"Develop with Game Framework",
         pptScene:function () {

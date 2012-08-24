@@ -48,6 +48,7 @@
             'src/ppt8.js',
             'src/ppt9.js',
             'src/ppt10.js',
+            'src/pptHappy61.js',
             // effect files
             'src/effect/LogoWaveLayer.js',
             'src/effect/effectLayer.js',

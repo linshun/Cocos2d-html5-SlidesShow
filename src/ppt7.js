@@ -64,7 +64,7 @@ var ppt7 = ppt.extend({
         this._emitter.setSpeedVar(30);
 
 
-        *//*var startColor = this._emitter.getStartColor();
+        /*var startColor = this._emitter.getStartColor();
          startColor.r = 0.9;
          startColor.g = 0.9;
          startColor.b = 0.9;
@@ -72,7 +72,7 @@ var ppt7 = ppt.extend({
 
          var startColorVar = this._emitter.getStartColorVar();
          startColorVar.b = 0.1;
-         this._emitter.setStartColorVar(startColorVar);*//*
+         this._emitter.setStartColorVar(startColorVar);*/
 
         this._emitter.setEmissionRate(this._emitter.getTotalParticles() / this._emitter.getLife());
 

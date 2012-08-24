@@ -52,12 +52,12 @@ var pptList = [
         }
     },
 
-    {
+    /*{
         title:"Closure Compiler",
         pptScene:function () {
             return ppt9.scene();
         }
-    },
+    },*/
 
     {
         title:"Performance Test",

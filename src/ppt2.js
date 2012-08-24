@@ -31,10 +31,7 @@ var ppt2 = ppt.extend({
         this._timeLine.addBullet();
 
     },
-    onExit:function(){
-        this._super();
-        cc.AudioEngine.getInstance().stopBackgroundMusic(false);
-    },
+
 
     addBullet:function(){
         if(this._timeLine.addBullet() == false) {

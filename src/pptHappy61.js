@@ -23,10 +23,12 @@ var pptHappy61 = ppt.extend({
 
     },
 
-    onTouchBegan:function (touch, e) {
-        cc.log("touch began");
-        this.addBullet();
+    onExit:function(){
+        this._super();
+        cc.AudioEngine.getInstance().stopBackgroundMusic(false);
     }
+
+
 
 
 });

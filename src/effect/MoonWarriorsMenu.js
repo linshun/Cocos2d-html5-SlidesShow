@@ -72,10 +72,11 @@ var MoonWarriorsSysMenu = cc.Layer.extend({
         return bRet;
     },
     onNewGame:function (pSender) {
-        var scene = cc.Scene.create();
+        //var scene = cc.Scene.create();
         //scene.addChild(GameLayer.create());
         //scene.addChild(GameControlMenu.create());
         //cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
+        cc.AudioEngine.getInstance().stopBackgroundMusic(false);
     },
     onSettings:function (pSender) {
         this.onButtonEffect();

@@ -1,5 +1,5 @@
 var ppt4 = ppt.extend({
-    _currentBellet:0,
+    _currentBullet:0,
 
     onEnter:function () {
 
@@ -32,8 +32,8 @@ var ppt4 = ppt.extend({
 
     addBullet:function () {
         cc.log("ppt4 addBullet.")
-        if (this._currentBellet == 0) {
-            this._currentBellet++;
+        if (this._currentBullet == 0) {
+            this._currentBullet++;
             var size = cc.Director.getInstance().getWinSize();
             var label = cc.LabelTTF.create("开发时间:", "Arial", 56);
             //var color = new cc.Color3B(255,0,0);
@@ -49,7 +49,7 @@ var ppt4 = ppt.extend({
             this.addChild(subLabel, 3);
             subLabel.setPosition(cc.p(size.width - 300, 440));
 
-        } else if (this._currentBellet == 1) {
+        } else if (this._currentBullet == 1) {
             this.gotNextScene();
         }
 

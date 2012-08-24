@@ -53,7 +53,8 @@
             'src/effect/effectLayer.js',
             'src/effect/GameController.js',
             'src/effect/MoonWarriorsMenu.js',
-            'src/effect/flareEffect.js'
+            'src/effect/flareEffect.js',
+            'src/effect/timeLine.js'
 
 
         ]

@@ -33,6 +33,9 @@ var s_zhinv = "res/images/zhinv.png";
 var s_snow = "res/images/snow.png";
 var s_stars1 = "res/images/stars.png";
 var s_sakura = "res/images/sakura.png";
+var s_webgldemo = "res/images/webgl_demo.jpg";
+var s_job = "res/images/job.jpg";
+var s_plugin = "res/images/plugin.jpg";
 
 // MoonWarriors
 var s_loading = "res/images/loading.png";
@@ -84,6 +87,9 @@ var g_res = [
     {type:"image", src:"res/images/snow.png"},
     {type:"image", src:"res/images/stars.png"},
     {type:"image", src:"res/images/sakura.png"},
+    {type:"image", src:"res/images/webgl_demo.jpg"},
+    {type:"image", src:"res/images/job.jpg"},
+    {type:"image", src:"res/images/plugin.jpg"},
 
     {type:"image", src:s_loading},
     {type:"image", src:s_ship01},

@@ -1,6 +1,6 @@
 var ppt5 = ppt.extend({
 
-    _currentBellet:0,
+    _currentBullet:0,
     onEnter:function () {
 
         this._super();
@@ -36,8 +36,8 @@ var ppt5 = ppt.extend({
 
     addBullet:function () {
         cc.log("ppt4 addBullet.")
-        if (this._currentBellet == 0) {
-            this._currentBellet++;
+        if (this._currentBullet == 0) {
+            this._currentBullet++;
             var size = cc.Director.getInstance().getWinSize();
             var label = cc.LabelTTF.create("射菊花", "Arial", 58);
             var color = new cc.Color3B(255, 0, 0);
@@ -67,7 +67,7 @@ var ppt5 = ppt.extend({
             div.translate(0, -500);*/
 
 
-        } else if (this._currentBellet == 1) {
+        } else if (this._currentBullet == 1) {
             this.gotNextScene();
         }
 

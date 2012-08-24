@@ -1,5 +1,5 @@
 var ppt9 = ppt.extend({
-    _currentBellet:0,
+    _currentBullet:0,
     _office1:null,
     _office2:null,
     onEnter:function () {

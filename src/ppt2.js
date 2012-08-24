@@ -1,6 +1,7 @@
 var ppt2 = ppt.extend({
 
-    _currentBellet:0,
+    _currentBullet:0,
+    _timeLine:null,
     _riq:null,
     _google:null,
     _gameFromScratch:null,
@@ -16,28 +17,30 @@ var ppt2 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
-        var moonWarriors = MoonWarriorsSysMenu.create();
+        /*var moonWarriors = MoonWarriorsSysMenu.create();
 
         this.addChild(moonWarriors,2);
         moonWarriors.setScale(0.8);
 
         moonWarriors.setPosition(cc.p(size.width / 2, size.height / 2 - 200))
+*/
+        this._timeLine = new TimeLineppt();
 
+        this.addChild(this._timeLine);
 
-
+        this._timeLine.addBullet();
 
     },
     onExit:function(){
         this._super();
         cc.AudioEngine.getInstance().stopBackgroundMusic(false);
+    },
+
+    addBullet:function(){
+        if(this._timeLine.addBullet() == false) {
+            this.gotNextScene();
+        }
     }
-
-    /*onTouchBegan:function (touch, e) {
-        cc.log("touch began");
-        this.addBullet();
-    }*/
-
-
 
 });
 

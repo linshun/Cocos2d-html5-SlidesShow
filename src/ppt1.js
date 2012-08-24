@@ -1,6 +1,6 @@
 var ppt1 = ppt.extend({
 
-    _currentBellet:0,
+    _currentBullet:0,
 
     onEnter:function () {
 

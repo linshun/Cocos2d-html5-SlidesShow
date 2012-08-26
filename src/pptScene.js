@@ -1,7 +1,7 @@
 // Add your ppt list
 var pptList = [
     {
-        title:"",
+        title:"MainPage",
         pptScene:function () {
             return new MainPage.scene();
         }
@@ -19,14 +19,14 @@ var pptList = [
         }
     },
     {
-        title:"What is next?",   //No Profit?
+        title:"What is next?", //No Profit?
         pptScene:function () {
             return ppt3.scene();
         }
     },
 
     {
-        title:"Happy Children's Day!",   //No Profit?
+        title:"Happy Children's Day!", //No Profit?
         pptScene:function () {
             return pptHappy61.scene();
         }
@@ -53,11 +53,11 @@ var pptList = [
     },
 
     /*{
-        title:"Closure Compiler",
-        pptScene:function () {
-            return ppt9.scene();
-        }
-    },*/
+     title:"Closure Compiler",
+     pptScene:function () {
+     return ppt9.scene();
+     }
+     },*/
 
     {
         title:"Performance Test",
@@ -100,13 +100,29 @@ var ppt = cc.Layer.extend({
         var size = cc.Director.getInstance().getWinSize();
 
 
-        var title = pptList[currentPPT].title;
-        var label = cc.LabelTTF.create(title, "Arial", 38);
-        var color = new cc.Color3B(0, 154, 216);
-        label.setColor(color);
-        label.setAnchorPoint(cc.p(0, 0));
-        this.addChild(label, 1);
-        label.setPosition(cc.p(80, size.height - 90));
+
+        if (currentPPT != 0 && currentPPT != pptList.length - 1) {
+            var title = pptList[currentPPT].title;
+            var label = cc.LabelTTF.create(title, "Arial", 38);
+            var color = new cc.Color3B(0, 154, 216);
+            label.setColor(color);
+            label.setAnchorPoint(cc.p(0, 0));
+            this.addChild(label, 1);
+            label.setPosition(cc.p(80, size.height - 90));
+
+            var cocos2dhtml5 = cc.Sprite.create(s_cocos2dhtml5);
+            cocos2dhtml5.setAnchorPoint(cc.p(0, 0));
+            cocos2dhtml5.setPosition(cc.p(60, 10));
+            this.addChild(cocos2dhtml5, 1);
+        }
+        //cc.DOM.convert(cocos2dhtml5) ;
+
+        /* var label = cc.LabelTTF.create("/www.cocos2d-html5.org", "Arial", 28);
+         var color = new cc.Color3B(0, 154, 216);
+         label.setColor(color);
+         label.setAnchorPoint(cc.p(0, 0));
+         this.addChild(label, 1);
+         label.setPosition(cc.p(200, 10));*/
 
     },
 

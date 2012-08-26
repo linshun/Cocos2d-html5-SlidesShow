@@ -26,7 +26,7 @@ var MainPage = ppt.extend({
         this.addChild(mainFrontTreeRight, Birzzle.LayerType.front);
 
 
-        var logo = cc.Sprite.create(s_cocos2dhtml5);
+        var logo = cc.Sprite.create(s_cocos2dhtml5logo);
         logo.setPosition((cc.p(100, size.height / 2)));
         logo.setAnchorPoint(cc.p(0, 0.5));
         logo.setScale(0.7);

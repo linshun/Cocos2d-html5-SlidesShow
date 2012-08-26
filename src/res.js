@@ -1,7 +1,8 @@
 var s_backGround = "res/images/bj03_01_sx.jpg";
 var s_mainpage1024 = "res/images/menuBg.jpg";
 var s_backGround1024 = "res/images/background1024.jpg";
-var s_cocos2dhtml5 = "res/images/cocos2dhtml5logo.png";
+var s_cocos2dhtml5 = "res/images/cocos2d-html5.png";
+var s_cocos2dhtml5logo = "res/images/cocos2dhtml5logo.png";
 var s_visitlist = "res/images/visitlist.png";
 var s_riq = "res/images/riq.jpg";
 var s_google = "res/images/Google.png";
@@ -69,6 +70,7 @@ var g_res = [
     {type:"image", src:"res/images/bj03_01_sx.jpg"},
     {type:"image", src:"res/images/menuBg.jpg"},
     {type:"image", src:"res/images/background1024.jpg"},
+    {type:"image", src:"res/images/cocos2d-html5.png"},
     {type:"image", src:"res/images/cocos2dhtml5logo.png"},
     {type:"image", src:"res/images/visitlist.png"},
     {type:"image", src:"res/images/riq.jpg"},

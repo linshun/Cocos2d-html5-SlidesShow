@@ -11,7 +11,7 @@ var ppt10 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
-        var logo = cc.Sprite.create(s_cocos2dhtml5);
+        var logo = cc.Sprite.create(s_cocos2dhtml5logo);
         logo.setPosition((cc.p(size.width / 2, size.height / 2 + 80)));
         logo.setAnchorPoint(cc.p(0.5, 0.5));
         logo.setScale(0.8);

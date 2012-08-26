@@ -171,6 +171,8 @@ var TimeLineppt = cc.Scene.extend({
         videoTutorial.setScale(1.2);
         var closureCompiler = cc.Sprite.create(s_closureCompiler);
         //closureCompiler.setScale(0.7, 0.6);       s_cocos2dhtml5Banner
+        var cocos2dhtml5Theme = cc.Sprite.create(s_cocos2dhtml5Theme);
+        cocos2dhtml5Theme.setScale(0.8);
         var cocos2dhtml5Banner = cc.Sprite.create(s_cocos2dhtml5Banner);
         //cocos2dhtml5Banner.setScale(1.2);
         var alpha1 = cc.Sprite.create(s_alpha1);
@@ -182,7 +184,7 @@ var TimeLineppt = cc.Scene.extend({
 
         var sprite4 = cc.Sprite.create(s_job);
 
-        this.addEntry(1,3, 'Cocos2d-html5 Start!!', cocos2dhtml5Banner);
+        this.addEntry(1,3, 'Cocos2d-html5 Start!!', cocos2dhtml5Theme);
         //this.addEntry(30,3, 'DevCon!');
         this.addEntry(28,5, 'Alpha1 Release!!!', alpha1);
         this.addEntry(1,6, 'MoonWarriors!',moonWarriors);

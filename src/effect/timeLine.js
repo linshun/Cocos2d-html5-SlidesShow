@@ -177,6 +177,8 @@ var TimeLineppt = cc.Scene.extend({
         alpha1.setScale(1.4);
         var alpha2 = cc.Sprite.create(s_alpha2);
         alpha2.setScale(1.2);
+        var cocos2dEngins = cc.Sprite.create(s_cocos2dEngines);
+        cocos2dEngins.setScale(0.7);
 
         var sprite4 = cc.Sprite.create(s_job);
 
@@ -190,9 +192,9 @@ var TimeLineppt = cc.Scene.extend({
         this.addEntry(8,6, 'Closure Compiler Supported!!', closureCompiler );
         this.addEntry(17,6, 'JSDoc!', gitHubHistory);
         this.addEntry(18,6, 'Alpha2 Release!!!', alpha2);
-        this.addEntry(28,7, 'API Finalized for 3 Engines!');
+        this.addEntry(28,7, 'API Finalized for 3 Engines!',cocos2dEngins);
         this.addEntry(15,8, 'Cocos2d-html5 Job!', job);
-        this.addEntry(28,8, 'V2.0 Release!');
+        this.addEntry(28,8, 'V2.0 Release!', cocos2dhtml5Banner);
 
         window.coolppt = this;
     }

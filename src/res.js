@@ -37,6 +37,7 @@ var s_plugin = "res/images/plugin.png";
 var s_videoTutorial = "res/images/videoTutorial.png";
 var s_closureCompiler = "res/images/closureCompiler.png";
 var s_cocos2dhtml5Banner = "res/images/html5-banner.png";
+var s_cocos2dEngines = "res/images/Cocos2dEngines.png";
 var s_alpha1 = "res/images/alpha1.png";
 var s_alpha2 = "res/images/alpha2.png";
 
@@ -107,6 +108,7 @@ var g_res = [
     {type:"image", src:"res/images/videoTutorial.png"},
     {type:"image", src:"res/images/closureCompiler.png"},
     {type:"image", src:"res/images/html5-banner.png"},
+    {type:"image", src:"res/images/Cocos2dEngines.png"},
     {type:"image", src:"res/images/alpha1.png"},
     {type:"image", src:"res/images/alpha2.png"},
 

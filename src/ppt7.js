@@ -103,7 +103,7 @@ ppt7.scene = function () {
     window.snowLayer = layer;
     layer.init();
     ret.addChild(layer);
-    return cc.TransitionProgressHorizontal.create(1, ret);
+    return cc.TransitionProgressHorizontal.create(0.8, ret);
 };
 
 window.stopSnow = function () {

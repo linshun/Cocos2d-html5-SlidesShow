@@ -63,8 +63,8 @@ var MoonWarriorsSysMenu = cc.Layer.extend({
             this._ship.runAction(cc.MoveBy.create(2, cc.p(Math.random() * winSize.width, this._ship.getPosition().y + winSize.height + 100)));
 
             if (true) {     //MW.SOUND
-                cc.AudioEngine.getInstance().setBackgroundMusicVolume(0.7);
-                cc.AudioEngine.getInstance().playBackgroundMusic(s_mainMainMusic, true);
+                //cc.AudioEngine.getInstance().setBackgroundMusicVolume(0.7);
+                //cc.AudioEngine.getInstance().playBackgroundMusic(s_mainMainMusic, true);
             }
 
             bRet = true;
@@ -76,7 +76,7 @@ var MoonWarriorsSysMenu = cc.Layer.extend({
         //scene.addChild(GameLayer.create());
         //scene.addChild(GameControlMenu.create());
         //cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1.2, scene));
-        cc.AudioEngine.getInstance().stopBackgroundMusic(false);
+        //cc.AudioEngine.getInstance().stopBackgroundMusic(false);
     },
     onSettings:function (pSender) {
         this.onButtonEffect();

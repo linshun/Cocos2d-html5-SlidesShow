@@ -46,5 +46,5 @@ ppt3.scene = function () {
     var layer = new ppt3();
     layer.init();
     ret.addChild(layer);
-    return cc.TransitionMoveInL.create(1, ret);
+    return cc.TransitionMoveInL.create(0.8, ret);
 };

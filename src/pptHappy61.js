@@ -38,5 +38,5 @@ pptHappy61.scene = function () {
     var layer = new pptHappy61();
     layer.init();
     ret.addChild(layer);
-    return cc.TransitionRotoZoom.create(1.0, ret);
+    return cc.TransitionRotoZoom.create(0.8, ret);
 };

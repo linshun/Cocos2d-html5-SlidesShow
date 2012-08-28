@@ -22,5 +22,5 @@ ppt8.scene = function () {
     var layer = new ppt8();
     layer.init();
     ret.addChild(layer);
-    return cc.TransitionProgressRadialCW.create(1, ret);
+    return cc.TransitionProgressRadialCW.create(0.8, ret);
 };

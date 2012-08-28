@@ -13,11 +13,22 @@ var ppt1 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
+        var multiPlatform = cc.Sprite.create(s_multiplatform);
+        multiPlatform.setAnchorPoint(cc.p(0.5, 0.5));
+        multiPlatform.setScale(0.8)
+        multiPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
+        this.addChild(multiPlatform, 0);
+
     },
 
-    onTouchBegan:function (touch, e) {
-        cc.log("touch began");
-        this.addBullet();
+    addBullet:function (touch, e) {
+        if(this._currentBullet == 0){
+            this._currentBullet++;
+            // add cross cocos2d image
+        } else {
+            this.gotNextScene();
+        }
+
     }
 
 
@@ -28,5 +39,5 @@ ppt1.scene = function () {
     var layer = new ppt1();
     layer.init();
     ret.addChild(layer);
-    return cc.TransitionRotoZoom.create(1.0,ret);
+    return cc.TransitionRotoZoom.create(0.5,ret);
 };

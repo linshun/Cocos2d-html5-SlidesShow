@@ -13,7 +13,7 @@ var ppt7 = ppt.extend({
 
         var moon = cc.Sprite.create(s_moon);
         moon.setAnchorPoint(cc.p(0.5, 0.5));
-        moon.setPosition(cc.p(size.width / 2, size.height / 2 - 20));
+        moon.setPosition(cc.p(size.width / 2, size.height / 2 - 10));
         moon.setScale(0.9, 0.8);
         this.addChild(moon, 0);
 

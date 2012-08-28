@@ -68,14 +68,14 @@ var MainPage = ppt.extend({
         this.addChild(subLabel, 1);
         subLabel.setPosition(cc.p(660, size.height / 2 + 20));
 
-        var speakerLabel = cc.LabelTTF.create("@林顺sean", "Arial", 28);
+        var speakerLabel = cc.LabelTTF.create("@林顺sean", "Arial", 38);
         //var color = new cc.Color3B(0,154,216);
         speakerLabel.setColor(color);
         //speakerLabel.setAnchorPoint(cc.p(0,0));
         this.addChild(speakerLabel, 1);
         speakerLabel.setPosition(cc.p(660, size.height / 2 - 100));
 
-        var teamLabel = cc.LabelTTF.create("Cocos2d-x Team", "Arial", 28);
+        var teamLabel = cc.LabelTTF.create("Cocos2d-x Team", "Arial", 38);
         //var color = new cc.Color3B(0,154,216);
         teamLabel.setColor(color);
         //speakerLabel.setAnchorPoint(cc.p(0,0));

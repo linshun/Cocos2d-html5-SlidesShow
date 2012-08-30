@@ -18,10 +18,25 @@ var pptList = [
             return ppt2.scene();
         }
     },
+
+    {
+        title:"DOM Debug",
+        pptScene:function () {
+            return ppt7.scene();
+        }
+    },
+
     {
         title:"What is next?", //No Profit?
         pptScene:function () {
             return ppt3.scene();
+        }
+    },
+
+    {
+        title:"WebGL Showcase",
+        pptScene:function () {
+            return ppt8.scene();
         }
     },
 
@@ -45,26 +60,12 @@ var pptList = [
         }
     },
 
-    {
-        title:"DOM Debug",
-        pptScene:function () {
-            return ppt7.scene();
-        }
-    },
-
     /*{
      title:"Closure Compiler",
      pptScene:function () {
      return ppt9.scene();
      }
      },*/
-
-    {
-        title:"Performance Test",
-        pptScene:function () {
-            return ppt8.scene();
-        }
-    },
 
     {
         title:"Of Course FishingJoy",

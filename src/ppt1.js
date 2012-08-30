@@ -1,6 +1,7 @@
 var ppt1 = ppt.extend({
 
     _currentBullet:0,
+    _multiPlatform:null,
 
     onEnter:function () {
 
@@ -13,11 +14,11 @@ var ppt1 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
-        var multiPlatform = cc.Sprite.create(s_multiplatform);
-        multiPlatform.setAnchorPoint(cc.p(0.5, 0.5));
-        multiPlatform.setScale(0.8)
-        multiPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
-        this.addChild(multiPlatform, 0);
+        this._multiPlatform = cc.Sprite.create(s_multiplatform);
+        this._multiPlatform.setAnchorPoint(cc.p(0.5, 0.5));
+        this._multiPlatform.setScale(0.8)
+        this._multiPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
+        this.addChild(this._multiPlatform, 0);
 
     },
 
@@ -25,6 +26,13 @@ var ppt1 = ppt.extend({
         if(this._currentBullet == 0){
             this._currentBullet++;
             // add cross cocos2d image
+            var size = cc.Director.getInstance().getWinSize();
+            this.removeChild(this._multiPlatform);
+            var cocos2dCrossPlatform = cc.Sprite.create(s_cocos2dCrossPlatform);
+            cocos2dCrossPlatform.setAnchorPoint(cc.p(0.5, 0.5));
+            cocos2dCrossPlatform.setScale(0.95)
+            cocos2dCrossPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
+            this.addChild(cocos2dCrossPlatform, 0);
         } else {
             this.gotNextScene();
         }

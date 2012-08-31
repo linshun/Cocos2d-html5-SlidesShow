@@ -5,7 +5,7 @@ var s_cocos2dhtml5 = "res/images/cocos2d-html5.png";
 var s_cocos2dhtml5logo = "res/images/cocos2dhtml5logo.png";
 var s_multiplatform = "res/images/multiplatform.jpg";
 var s_cocos2dCrossPlatform = "res/images/cocos2dCrossPlatform.png";
-//var s_google = "res/images/Google.png";
+var s_webGLShowcase = "res/images/webgldemo.jpg";
 //var s_zynga = "res/images/Zynga.png";
 var s_thirdparty = "res/images/thirdparty.png";
 var s_game1 = "res/images/game1.jpg";
@@ -74,7 +74,7 @@ var g_res = [
     {type:"image", src:"res/images/cocos2dhtml5logo.png"},
     {type:"image", src:"res/images/multiplatform.jpg"},
     {type:"image", src:"res/images/cocos2dCrossPlatform.png"},
-    //{type:"image", src:"res/images/Google.png"},
+    {type:"image", src:"res/images/webgldemo.jpg"},
     //{type:"image", src:"res/images/Zynga.png"},
     {type:"image", src:"res/images/thirdparty.png"},
     {type:"image", src:"res/images/game1.jpg"},

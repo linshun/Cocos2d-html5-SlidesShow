@@ -11,6 +11,13 @@ var ppt8 = ppt.extend({
         backGround.setPosition(cc.p(size.width / 2, size.height / 2));
         this.addChild(backGround, 0);
 
+        var webGLShowcase = cc.Sprite.create(s_webGLShowcase);
+        webGLShowcase.setAnchorPoint(cc.p(0.5, 0.5));
+        webGLShowcase.setScale(1.2);
+        webGLShowcase.setPosition(cc.p(size.width / 2, size.height / 2-20));
+        this.addChild(webGLShowcase, 0);
+
+
 
 
 

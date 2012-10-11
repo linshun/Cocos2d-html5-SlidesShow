@@ -64,6 +64,14 @@ var s_buttonEffect = "res/sounds/buttonEffet";
 var s_fireEffect = "res/sounds/fireEffect";
 var s_moonwarriors = "res/images/moonwarriors.jpg";
 
+// Games
+var s_angrybirds = "res/images/angrybirds.jpg";
+var s_thai = "res/images/thai.jpg";
+var s_cell = "res/images/cell.png";
+var s_cow = "res/images/cow.png";
+var s_runner = "res/images/runner.jpg";
+var s_slides = "res/images/slides.jpg";
+
 
 var g_res = [
     // image
@@ -121,6 +129,14 @@ var g_res = [
     {type:"image", src:s_menu},
     {type:"image", src:s_logo},
     {type:"image", src:s_flare},
+
+    //game
+    {type:"image", src:s_angrybirds},
+    {type:"image", src:s_thai},
+    {type:"image", src:s_cell},
+    {type:"image", src:s_cow},
+    {type:"image", src:s_slides},
+    {type:"image", src:s_runner},
 
     //fnt
     {type:"fnt", src:"res/fonts/bitmapFontTest.fnt"},

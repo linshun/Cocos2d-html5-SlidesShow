@@ -61,7 +61,7 @@ var MainPage = ppt.extend({
         this.addChild(label, 1);
         label.setPosition(cc.p(660, size.height / 2 + 100));
 
-        var subLabel = cc.LabelTTF.create("与高效游戏开发", "Arial", 48);
+        var subLabel = cc.LabelTTF.create("与捕鱼达人游戏开发", "Arial", 48);
         //var color = new cc.Color3B(0,154,216);
         subLabel.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));

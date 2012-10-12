@@ -158,8 +158,8 @@ var TimeLineppt = cc.Scene.extend({
         var gameFromScratch = cc.Sprite.create(s_thirdparty);
         gameFromScratch.setScale(0.7, 0.6);
 
-        var videoTutorial = cc.Sprite.create(s_videoTutorial);
-        videoTutorial.setScale(1.2);
+        var fishingJoy = cc.Sprite.create(s_fishingjoylogo);
+        fishingJoy.setScale(0.85);
         var closureCompiler = cc.Sprite.create(s_closureCompiler);
         //closureCompiler.setScale(0.7, 0.6);       s_cocos2dhtml5Banner
         var cocos2dhtml5Theme = cc.Sprite.create(s_cocos2dhtml5Theme);
@@ -179,15 +179,16 @@ var TimeLineppt = cc.Scene.extend({
         //this.addEntry(30,3, 'DevCon!');
         this.addEntry(28, 5, 'Alpha1 Release!!!', alpha1);
         this.addEntry(1, 6, 'MoonWarriors!', moonWarriors);
-        this.addEntry(2, 6, 'Video Tutorial', videoTutorial);
+        //this.addEntry(2, 6, 'Video Tutorial', videoTutorial);
         this.addEntry(6, 6, 'GameFromScratch Tutorials', gameFromScratch);
 
         this.addEntry(8, 6, 'Closure Compiler Supported!!', closureCompiler);
         this.addEntry(17, 6, 'JSDoc!', gitHubHistory);
         this.addEntry(18, 6, 'Alpha2 Release!!!', alpha2);
         this.addEntry(28, 7, 'API Finalized for 3 Engines!', cocos2dEngins);
-        this.addEntry(15, 8, 'Cocos2d-html5 Job!', job);
+        //this.addEntry(15, 8, 'Cocos2d-html5 Job!', job);
         this.addEntry(28, 8, 'V2.0 Release!', cocos2dhtml5Banner);
+        this.addEntry(29, 9, 'FishingJoy!', fishingJoy);
 
         window.coolppt = this;
     }

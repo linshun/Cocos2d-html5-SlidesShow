@@ -1,42 +1,38 @@
 // Add your ppt list
 var pptList = [
+
     {
         title:"MainPage",
         pptScene:function () {
             return new MainPage.scene();
         }
     },
+
     {
-        title:"Why Cocos2d-html5?",
-        pptScene:function () {
-            return ppt1.scene();
-        }
-    },
-    {
-        title:"That is how it goes",
+        title:"The Stories before FishingJoy",
         pptScene:function () {
             return ppt2.scene();
         }
     },
 
     {
-        title:"DOM Debug",
+        title:"FishingJoy Stories",
         pptScene:function () {
-            return ppt7.scene();
+            return ppt6.scene();
         }
     },
 
     {
-        title:"What is next?", //No Profit?
+        title:"What have we done?", //No Profit?
         pptScene:function () {
             return ppt3.scene();
         }
     },
 
     {
-        title:"WebGL Showcase",
+        title:"Why is Cocos2d-html5?",
         pptScene:function () {
-            return ppt8.scene();
+            return ppt1.scene();
         }
     },
 
@@ -47,12 +43,14 @@ var pptList = [
         }
     },
 
+
     {
         title:"Develop with Game Framework",
         pptScene:function () {
             return ppt4.scene();
         }
     },
+
     {
         title:"Quick Development",
         pptScene:function () {
@@ -60,19 +58,12 @@ var pptList = [
         }
     },
 
-    /*{
-     title:"Closure Compiler",
-     pptScene:function () {
-     return ppt9.scene();
-     }
-     },*/
-
     {
-        title:"Of Course FishingJoy",
-        pptScene:function () {
-            return ppt6.scene();
-        }
-    },
+         title:"Other Games",
+         pptScene:function () {
+         return ppt9.scene();
+         }
+     },
 
     {
         title:"", // Q & A
@@ -80,6 +71,22 @@ var pptList = [
             return ppt10.scene();
         }
     }
+
+    /*{
+     title:"DOM Debug",
+     pptScene:function () {
+     return ppt7.scene();
+     }
+     },
+
+
+
+     {
+     title:"WebGL Showcase",
+     pptScene:function () {
+     return ppt8.scene();
+     }
+     },*/
 
 ];
 

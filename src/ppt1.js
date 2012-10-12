@@ -2,12 +2,13 @@ var ppt1 = ppt.extend({
 
     _currentBullet:0,
     _multiPlatform:null,
+    _framework:null,
 
     onEnter:function () {
 
         this._super();
         cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, 0, true);
-        cc.log("I am ppt1. Why Cocos2d-html5?");
+        cc.log("I am ppt1. What is Cocos2d-html5");
         var size = cc.Director.getInstance().getWinSize();
         var backGround = cc.Sprite.create(s_backGround1024);
         backGround.setAnchorPoint(cc.p(0.5, 0.5));
@@ -28,11 +29,22 @@ var ppt1 = ppt.extend({
             // add cross cocos2d image
             var size = cc.Director.getInstance().getWinSize();
             this.removeChild(this._multiPlatform);
-            var cocos2dCrossPlatform = cc.Sprite.create(s_cocos2dCrossPlatform);
-            cocos2dCrossPlatform.setAnchorPoint(cc.p(0.5, 0.5));
-            cocos2dCrossPlatform.setScale(0.95)
-            cocos2dCrossPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
-            this.addChild(cocos2dCrossPlatform, 0);
+            this._framework = cc.Sprite.create(s_framework);
+            this._framework.setAnchorPoint(cc.p(0.5, 0.5));
+            this._framework.setScale(1.5)
+            this._framework.setPosition(cc.p(size.width / 2, size.height / 2-20));
+            this.addChild(this._framework, 0);
+
+        } else if(this._currentBullet == 1){
+                this._currentBullet++;
+                // add cross cocos2d image
+                var size = cc.Director.getInstance().getWinSize();
+                this.removeChild(this._framework);
+                var cocos2dCrossPlatform = cc.Sprite.create(s_cocos2dCrossPlatform);
+                cocos2dCrossPlatform.setAnchorPoint(cc.p(0.5, 0.5));
+                cocos2dCrossPlatform.setScale(0.95)
+                cocos2dCrossPlatform.setPosition(cc.p(size.width / 2, size.height / 2-20));
+                this.addChild(cocos2dCrossPlatform, 0);
         } else {
             this.gotNextScene();
         }

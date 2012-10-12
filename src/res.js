@@ -13,8 +13,9 @@ var s_game21 = "res/images/game21.png";
 var s_game22 = "res/images/game22.png";
 var s_game23 = "res/images/game23.png";
 var s_birzzlegame = "res/images/birzzlegame.png";
-//var s_framework = "res/images/framework.jpg";
+var s_framework = "res/images/framework.jpg";
 var s_fishingjoy1 = "res/images/fishingjoy1.png";
+var s_fishingjoy960 = "res/images/fishingjoy960.png";
 //var s_roadmap = "res/images/roadmap.jpg";
 //var s_office1 = "res/images/office1.jpg";
 //var s_office2 = "res/images/office2.jpg";
@@ -71,6 +72,7 @@ var s_cell = "res/images/cell.png";
 var s_cow = "res/images/cow.png";
 var s_runner = "res/images/runner.jpg";
 var s_slides = "res/images/slides.jpg";
+var s_coconutisland = "res/images/coconutisland.png";
 
 
 var g_res = [
@@ -89,9 +91,10 @@ var g_res = [
     {type:"image", src:"res/images/game21.png"},
     {type:"image", src:"res/images/game22.png"},
     {type:"image", src:"res/images/game23.png"},
-    //{type:"image", src:"res/images/framework.jpg"},
+    {type:"image", src:"res/images/framework.jpg"},
     {type:"image", src:"res/images/birzzlegame.png"},
     {type:"image", src:"res/images/fishingjoy1.png"},
+    {type:"image", src:"res/images/fishingjoy960.png"},
     //{type:"image", src:"res/images/roadmap.jpg"},
     //{type:"image", src:"res/images/office1.jpg"},
     //{type:"image", src:"res/images/office2.jpg"},
@@ -137,6 +140,7 @@ var g_res = [
     {type:"image", src:s_cow},
     {type:"image", src:s_slides},
     {type:"image", src:s_runner},
+    {type:"image", src:s_coconutisland},
 
     //fnt
     {type:"fnt", src:"res/fonts/bitmapFontTest.fnt"},

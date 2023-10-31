@@ -10,7 +10,7 @@ var ppt2 = ppt.extend({
 
         this._super();
         cc.Director.getInstance().getTouchDispatcher().addTargetedDelegate(this, 0, true);
-        cc.log("I am ppt2.That is how it goes");
+        cc.log("I am ppt2.The Stories before FishingJoy");
         var size = cc.Director.getInstance().getWinSize();
         var backGround = cc.Sprite.create(s_backGround1024);
         backGround.setAnchorPoint(cc.p(0.5, 0.5));

@@ -4,7 +4,7 @@ var ppt6 = ppt.extend({
 
         this._super();
 
-        cc.log("I am ppt6. Of Course FishingJoy.");
+        cc.log("I am ppt6. FishingJoy Stories.");
         var size = cc.Director.getInstance().getWinSize();
         var backGround = cc.Sprite.create(s_backGround1024);
         backGround.setAnchorPoint(cc.p(0.5, 0.5));
@@ -19,37 +19,37 @@ var ppt6 = ppt.extend({
         this.addChild(fishingJoyGround, 0);
 
         // add the logo of fishing joy and play effect.
-        var fishingJoy1 = cc.Sprite.create(s_fishingjoy1);
+        /*var fishingJoy1 = cc.Sprite.create(s_fishingjoy1);
         fishingJoy1.setAnchorPoint(cc.p(0.5, 0.5));
         fishingJoy1.setPosition(cc.p(size.width / 2, 280));
         fishingJoy1.setScale(0.9, 0.8);
-        this.addChild(fishingJoy1, 2);
+        this.addChild(fishingJoy1, 2);*/
 
-        var label = cc.LabelTTF.create("趟雷，", "Arial", 48);
+        /*var label = cc.LabelTTF.create("趟雷，", "Arial", 48);
         //var color = new cc.Color3B(255,0,0);
         //label.setColor(color);
         label.setAnchorPoint(cc.p(0, 0.5));
         this.addChild(label, 3);
-        label.setPosition(cc.p(size.width / 2 - 100, 340));
+        label.setPosition(cc.p(size.width / 2 - 100, 340));*/
 
-        var subLabel = cc.LabelTTF.create("填坑，", "Arial", 48);
+       /* var subLabel = cc.LabelTTF.create("I am here!", "Arial", 48);
         //var color = new cc.Color3B(255,0,0);
         //subLabel.setColor(color);
         subLabel.setAnchorPoint(cc.p(0, 0.5));
         this.addChild(subLabel, 3);
-        subLabel.setPosition(cc.p(size.width / 2 - 100, 280));
+        subLabel.setPosition(cc.p(size.width / 2 - 100, 280));*/
 
 
-        var teamLabel = cc.LabelTTF.create("欢迎吐槽！", "Arial", 48);
+        /*var teamLabel = cc.LabelTTF.create("欢迎吐槽！", "Arial", 48);
         //var color = new cc.Color3B(255,0,0);
         //teamLabel.setColor(color);
         teamLabel.setAnchorPoint(cc.p(0, 0.5));
         this.addChild(teamLabel, 3);
-        teamLabel.setPosition(cc.p(size.width / 2 - 100, 220));
+        teamLabel.setPosition(cc.p(size.width / 2 - 100, 220));*/
 
         // show fishingjoy demo
         var fishingJoyLogo = LogoWaveLayer.create();
-        fishingJoyLogo.setPosition(cc.p(size.width / 2 - 40, size.height - 160));
+        fishingJoyLogo.setPosition(cc.p(size.width / 2 - 40, size.height - 180));
         fishingJoyLogo.setScale(0.75);
         //fishingJoyLogo.setRotation(-5);
         this.addChild(fishingJoyLogo, 1);

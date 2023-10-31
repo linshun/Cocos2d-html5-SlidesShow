@@ -54,14 +54,14 @@ var MainPage = ppt.extend({
         main_bg_light.runAction(cc.RepeatForever.create(rotateAction));
 
 
-        var label = cc.LabelTTF.create("Cocos2d-html5快速演进", "Arial", 48);
+        var label = cc.LabelTTF.create("HTML5《捕鱼达人》和", "Arial", 48);
         var color = new cc.Color3B(0,0,0);
         label.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
         this.addChild(label, 1);
         label.setPosition(cc.p(660, size.height / 2 + 100));
 
-        var subLabel = cc.LabelTTF.create("与高效游戏开发", "Arial", 48);
+        var subLabel = cc.LabelTTF.create("Cocos2d-html5的故事", "Arial", 48);
         //var color = new cc.Color3B(0,154,216);
         subLabel.setColor(color);
         //label.setAnchorPoint(cc.p(0,0));
